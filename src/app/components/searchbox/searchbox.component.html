@@ -1,0 +1,7 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <input type="text" name="zip" [(ngModel)]="zip" placeholder="Input ZIP code...">
+  <input type="text" name="predominantDegrees" [(ngModel)]="predominantDegrees" placeholder="Input Predominant Degrees (comma separated)...">
+  <input type="number" name="year" [(ngModel)]="year" placeholder="Input the year...">
+  <input type="number" name="distance" [(ngModel)]="distance" placeholder="Distance (miles)...">
+  <input type="submit" value="Submit" class="btn">
+</form>
