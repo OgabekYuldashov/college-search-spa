@@ -23,11 +23,11 @@ export class SearchboxComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('On Submit:');
+    /*console.log(`On Submit: zip: ${this.zip}`);
     this.mapService.getCityNameByZipCode(this.zip).subscribe(resp => {
       console.log('maps: ');
       console.log(resp);
-    });
+    });*/
     this.collegesService.getColleges(this.zip, this.year, this.predominantDegrees, this.distance, this.page).subscribe(resp => {
 
             console.log('Response:');

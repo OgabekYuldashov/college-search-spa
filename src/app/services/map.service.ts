@@ -12,6 +12,7 @@ export class MapService {
 
   // @ts-ignore
   getCityNameByZipCode(zip: string): Observable<any> {
+    console.log('inside map service');
     this.http.get(`${this.mapsUrl}&address=${zip}`);
   }
 }
